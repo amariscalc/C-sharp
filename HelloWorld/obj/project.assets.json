@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alberto\\Source\\Repos\\amariscalc\\C-sharp\\HelloWorld\\HelloWorld.csproj",
-      "projectName": "HelloWorld",
-      "projectPath": "C:\\Users\\Alberto\\Source\\Repos\\amariscalc\\C-sharp\\HelloWorld\\HelloWorld.csproj",
+      "projectUniqueName": "C:\\Users\\Alberto\\Source\\Repos\\amariscalc\\C-sharp\\HelloWorld\\SintaxisBasica.csproj",
+      "projectName": "SintaxisBasica",
+      "projectPath": "C:\\Users\\Alberto\\Source\\Repos\\amariscalc\\C-sharp\\HelloWorld\\SintaxisBasica.csproj",
       "packagesPath": "C:\\Users\\Alberto\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Alberto\\Source\\Repos\\amariscalc\\C-sharp\\HelloWorld\\obj\\",
       "projectStyle": "PackageReference",
