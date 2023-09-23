@@ -124,7 +124,7 @@ namespace CSharpHelloWorld
             }
 
             Console.WriteLine("Run mySet but We´ll use foreach"); // Run mySet but We´ll use foreach
-            foreach (var items in MySet)
+            foreach (string items in MySet)
             {
                 Console.WriteLine (items);
                 /*
@@ -171,7 +171,7 @@ namespace CSharpHelloWorld
 
             // Class
             var MyPet = new Pet ("Perro Paco",15);
-            Console.WriteLine($"The dog´s name is {MyPet.name} and he is {MyPet.age} years old.");
+            Console.WriteLine($"The dog´s name is {MyPet.Name} and he is {MyPet.Age} years old.");
             Console.ReadKey();
         // Functions
         void myFunctions ()
