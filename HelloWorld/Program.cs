@@ -122,18 +122,78 @@ namespace CSharpHelloWorld
                 */
             }
 
+            Console.WriteLine("Run mySet but We´ll use foreach"); // Run mySet but We´ll use foreach
+            foreach (var items in mySet)
+            {
+                Console.WriteLine (items);
+                /*
+                 Almería
+                 Huelva
+                 Cádiz
+                 Córdoba
+                 Granada
+                 Sevilla
+                 Málaga
+                 Jaén
+                 */
+            }
+
             // Tuples
             var myTuple  = Tuple.Create <int,int,int> (1,2,3);
             var myOtherTuple = ("España","Portugal","Polonia","UK");
             Console.WriteLine(myTuple);         // (1, 2, 3)
             Console.WriteLine(myOtherTuple);    // (España, Portugal, Polonia, UK)
 
-
             // conditional if
+            int age = 35;
+            string name = "Alberto";
+            string city = "Sevilla";
+            string fav_team = "Real Betis Balompié";
 
-            // WORKING IN PROGRESS
+            if (age == 35 && name == "Alberto" && fav_team == "Real Betis Balompié")
+            {
+                Console.WriteLine($"Hello {name} I see....{age} years old");
+            }
+            else if (age != 35 || name != "Alberto")
+            {
+                Console.WriteLine("You are not the boss. Access Denied");
+            }
+            else
+            {
+                Console.WriteLine("default print");
+            }
 
-            //
+            // Run functions
+            myFunctions();
+            double result = funct_sum(5, 23);
+            Console.WriteLine(result);
+
+            // Class
+            var myPet = new Pet ("Perro Paco",15);
+            Console.WriteLine($"The dog´s name is {myPet.name} and he is {myPet.age} years old.");
+
+        // Functions
+        void myFunctions ()
+        {
+            Console.WriteLine("Exec the function!");
+        }
+        double funct_sum(double num1,double num2)
+        {
+                double sum = num1 + num2;
+                return sum;
+        }
+        
+
+        }
+    }
+    class Pet
+    {
+        public string name { get; set; }
+        public int age;
+        public Pet (string name_p, int age_p)
+        {
+            name = name_p;
+            age = age_p;
         }
     }
 }

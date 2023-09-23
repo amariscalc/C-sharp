@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TXrCbH/uXE67NcZrrfQzEgwn430PWPLa5MlWxphkRWHXunjpZIXZS0mYlYBv/yX6RkWybFonKslozPSyAEUQ7A==",
+  "dgSpecHash": "qxTWr6ghSwCo4KmfUr66LXKc3Opz6Uu1bvFyBazHse7FVBBYI5ytKoDv1WHuo+xXINaFhwurlLhBWBKOvEMoHw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Alberto\\Documents\\GitHub\\C-sharp\\HelloWorld\\HelloWorld.csproj",
+  "projectFilePath": "C:\\Users\\Alberto\\Source\\Repos\\amariscalc\\C-sharp\\HelloWorld\\HelloWorld.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
