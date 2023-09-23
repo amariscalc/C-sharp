@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kiLA53SRLf6vYX7zchFvsKD5EKPUkMty93t9Ek9IKfK2D+00yzUpPkJiTGsKaBb/giZlh3yfJ6VFCJNY9ok0cg==",
+  "dgSpecHash": "fkx0ZlzWtgz/LYdL8dbAh85IV+8+h+fb+4tLyGNN2clP2TE3b2v+Z5zBcESfgFnqP0yCj1EMXighj222E92M1w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alberto\\Source\\Repos\\amariscalc\\C-sharp\\HelloWorld\\SintaxisBasica.csproj",
+  "projectFilePath": "C:\\Users\\Alberto\\source\\repos\\amariscalc\\C-sharp\\SintaxisBasica\\SintaxisBasica.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

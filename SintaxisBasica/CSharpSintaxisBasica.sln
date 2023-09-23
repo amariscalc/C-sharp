@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SintaxisBasica", "SintaxisBasica.csproj", "{2EACF96B-688B-4446-BA84-6DE235A3FB93}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SintaxisBasica2", "..\SintaxisBasica2\SintaxisBasica2.csproj", "{CFC14367-13C9-47FB-8F4B-FBBE98CC34E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2EACF96B-688B-4446-BA84-6DE235A3FB93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EACF96B-688B-4446-BA84-6DE235A3FB93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EACF96B-688B-4446-BA84-6DE235A3FB93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFC14367-13C9-47FB-8F4B-FBBE98CC34E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFC14367-13C9-47FB-8F4B-FBBE98CC34E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFC14367-13C9-47FB-8F4B-FBBE98CC34E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFC14367-13C9-47FB-8F4B-FBBE98CC34E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

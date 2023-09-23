@@ -4,6 +4,7 @@
 
 // Import execution context
 using System;
+using System.Xml.Linq;
 using Microsoft.VisualBasic;
 
 // Create a namespace
@@ -19,85 +20,85 @@ namespace CSharpHelloWorld
             Console.WriteLine("Hello, World!!!");  // Hello, World!!!
             
             // Data types
-            string myString = "This is a string";
-            Console.WriteLine(myString);          // This is a string  
+            string MyString = "This is a string";
+            Console.WriteLine(MyString);          // This is a string  
             
             // Change the value
-            myString = "This is the new value";
-            Console.WriteLine(myString);          // This is the new value
+            MyString = "This is the new value";
+            Console.WriteLine(MyString);          // This is the new value
 
             // INT
-            int myInt = 25;
-            Console.WriteLine(myInt);          // 25
-            
+            int MyInt = 25;
+            Console.WriteLine(MyInt);          // 25
+
             // Operate with an "int"
-            myInt = myInt + 15;
-            Console.WriteLine(myInt);          // 40
-            Console.WriteLine(myInt + 2023);   // 2063
-            Console.WriteLine(myInt);          // 40
+            MyInt = MyInt + 15;
+            Console.WriteLine(MyInt);          // 40
+            Console.WriteLine(MyInt + 2023);   // 2063
+            Console.WriteLine(MyInt);          // 40
 
             // FLOAT
-            float myFloat = 1.81f;
-            Console.WriteLine(myFloat);        // 1.81
+            float MyFloat = 1.81f;
+            Console.WriteLine(MyFloat);        // 1.81
 
             // Double
-            double myDouble = 2.63;
-            Console.WriteLine(myDouble);       // 2.63
+            double MyDouble = 2.63;
+            Console.WriteLine(MyDouble);       // 2.63
 
             // Operate with numerical variables
-            Console.WriteLine((myInt + myDouble) * myFloat);
+            Console.WriteLine((MyInt + MyDouble) * MyFloat);
 
             // Bool
-            bool myBool = true; 
-            Console.WriteLine(myBool);          // True
-            myBool = false;
-            Console.WriteLine(myBool);          // False
+            bool MyBool = true; 
+            Console.WriteLine(MyBool);          // True
+            MyBool = false;
+            Console.WriteLine(MyBool);          // False
 
             // Print strings with other variable types
-            Console.WriteLine ("The value of myInt is: " + myInt + ".");  // The value of myInt is: 40.
-            Console.WriteLine ($"The value of myDouble is: {myDouble}."); // The value of myDouble is: 2,63.
+            Console.WriteLine ("The value of myInt is: " + MyInt + ".");  // The value of myInt is: 40.
+            Console.WriteLine ($"The value of myDouble is: {MyDouble}."); // The value of myDouble is: 2,63.
 
             // Create a constant
             const double PI = 3.14159;
             Console.WriteLine (PI); // 3,14159
 
-            const string myName = "Alberto";
-            Console.WriteLine (myName); // Alberto
+            const string MyName = "Alberto";
+            Console.WriteLine (MyName); // Alberto
 
             // myName = "Pepe"; Error, "myName is a constant so you can´t change the value.
 
             // Structures
             // Array
-            var myArray = new string [] {"Alberto", "Mariscal", "Sevilla"};
-            Console.WriteLine(myArray [1]); // Mariscal
+            var MyArray = new string [] {"Alberto", "Mariscal", "Sevilla"};
+            Console.WriteLine(MyArray[1]); // Mariscal
 
-            int [] numbers = {1,3,4,6,7,5,101};
-            Console.WriteLine(numbers [4]); // 7
+            int [] Numbers = {1,3,4,6,7,5,101};
+            Console.WriteLine(Numbers [4]); // 7
 
-            for (int i = 0; i < numbers.Length; i++)
+            for (int i = 0; i < Numbers.Length; i++)
             {
-                Console.Write(numbers [i]+ " "); // 1 3 4 6 7 5 101 
+                Console.Write(Numbers [i]+ " "); // 1 3 4 6 7 5 101 
             }
-            
+
             // The .Append() method on the array appends a value to the end of the sequence.
-            myArray = myArray.Append("Real Betis Balompíe").ToArray();
-            Console.WriteLine(myArray [3]); // Real Betis Balompíe
+            MyArray = MyArray.Append("Real Betis Balompíe").ToArray();
+            Console.WriteLine(MyArray[3]); // Real Betis Balompíe
 
             // Dictionary
-            var myDictionary = new Dictionary <string, int>
+            var MyDictionary = new Dictionary <string, int>
             {
                 {"Id",432545332},
                 {"Age",35},
                 {"Km", 5500}
             };
-            Console.WriteLine(myDictionary ["Id"]); // 432545332
-            Console.WriteLine(myDictionary ["Age"]); // 35
-            Console.WriteLine(myDictionary ["Km"]); // 5500
+            Console.WriteLine(MyDictionary["Id"]); // 432545332
+            Console.WriteLine(MyDictionary["Age"]); // 35
+            Console.WriteLine(MyDictionary["Km"]); // 5500
 
             // Read the Dictionary with a for loop
-            for (int i=0; i<myDictionary.Count; i++)
+            for (int i=0; i< MyDictionary.Count; i++)
             {
-                Console.WriteLine($"Key: {myDictionary.Keys.ElementAt(i)}. Value: {myDictionary.Values.ElementAt(i)}");
+                Console.WriteLine($"Key: {MyDictionary.Keys.ElementAt(i)}. Value: {MyDictionary.Values.ElementAt(i)}");
                 /*
                 Key: Id. Value: 432545332
                 Key: Age. Value: 35
@@ -106,10 +107,10 @@ namespace CSharpHelloWorld
             }
 
             // Sets
-            var mySet = new HashSet<string> {"Almería","Huelva","Cádiz","Córdoba","Granada","Sevilla","Málaga","Jaén"};
-            for (int i=0; i<mySet.Count; i++)
+            var MySet = new HashSet<string> {"Almería","Huelva","Cádiz","Córdoba","Granada","Sevilla","Málaga","Jaén"};
+            for (int i=0; i< MySet.Count; i++)
             {
-                Console.WriteLine($"Value loop {i+1} {mySet.ElementAt(i)}");
+                Console.WriteLine($"Value loop {i+1} {MySet.ElementAt(i)}");
                 /*
                 Value loop 1 Almería
                 Value loop 2 Huelva
@@ -123,7 +124,7 @@ namespace CSharpHelloWorld
             }
 
             Console.WriteLine("Run mySet but We´ll use foreach"); // Run mySet but We´ll use foreach
-            foreach (var items in mySet)
+            foreach (var items in MySet)
             {
                 Console.WriteLine (items);
                 /*
@@ -139,22 +140,22 @@ namespace CSharpHelloWorld
             }
 
             // Tuples
-            var myTuple  = Tuple.Create <int,int,int> (1,2,3);
-            var myOtherTuple = ("España","Portugal","Polonia","UK");
-            Console.WriteLine(myTuple);         // (1, 2, 3)
-            Console.WriteLine(myOtherTuple);    // (España, Portugal, Polonia, UK)
+            var MyTuple = Tuple.Create <int,int,int> (1,2,3);
+            var MyOtherTuple = ("España","Portugal","Polonia","UK");
+            Console.WriteLine(MyTuple);         // (1, 2, 3)
+            Console.WriteLine(MyOtherTuple);    // (España, Portugal, Polonia, UK)
 
             // conditional if
-            int age = 35;
-            string name = "Alberto";
-            string city = "Sevilla";
-            string fav_team = "Real Betis Balompié";
+            int Age = 35;
+            string Name = "Alberto";
+            string City = "Sevilla";
+            string FavTeam = "Real Betis Balompié";
 
-            if (age == 35 && name == "Alberto" && fav_team == "Real Betis Balompié")
+            if (Age == 35 && Name == "Alberto" && FavTeam == "Real Betis Balompié")
             {
-                Console.WriteLine($"Hello {name} I see....{age} years old");
+                Console.WriteLine($"Hello {Name} I see....{Age} years old");
             }
-            else if (age != 35 || name != "Alberto")
+            else if (Age != 35 || Name != "Alberto")
             {
                 Console.WriteLine("You are not the boss. Access Denied");
             }
@@ -165,22 +166,22 @@ namespace CSharpHelloWorld
 
             // Run functions
             myFunctions();
-            double result = funct_sum(5, 23);
-            Console.WriteLine(result);
+            double Result = funct_sum(5, 23);
+            Console.WriteLine(Result);
 
             // Class
-            var myPet = new Pet ("Perro Paco",15);
-            Console.WriteLine($"The dog´s name is {myPet.name} and he is {myPet.age} years old.");
+            var MyPet = new Pet ("Perro Paco",15);
+            Console.WriteLine($"The dog´s name is {MyPet.name} and he is {MyPet.age} years old.");
             Console.ReadKey();
         // Functions
         void myFunctions ()
         {
             Console.WriteLine("Exec the function!");
         }
-        double funct_sum(double num1,double num2)
+        double funct_sum(double Num1,double Num2)
         {
-                double sum = num1 + num2;
-                return sum;
+                double Sum = Num1 + Num2;
+                return Sum;
         }
         
 
@@ -188,12 +189,12 @@ namespace CSharpHelloWorld
     }
     class Pet
     {
-        public string name { get; set; }
-        public int age;
-        public Pet (string name_p, int age_p)
+        public string Name { get; set; }
+        public int Age;
+        public Pet (string NameP, int AgeP)
         {
-            name = name_p;
-            age = age_p;
+            Name = NameP;
+            Age = AgeP;
         }
     }
 }
