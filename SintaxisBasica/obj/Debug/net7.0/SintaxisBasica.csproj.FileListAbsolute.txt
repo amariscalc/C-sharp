@@ -1,0 +1,14 @@
+C:\Users\Alberto\Source\Repos\amariscalc\C-sharp\SintaxisBasica\bin\Debug\net7.0\SintaxisBasica.exe
+C:\Users\Alberto\Source\Repos\amariscalc\C-sharp\SintaxisBasica\bin\Debug\net7.0\SintaxisBasica.deps.json
+C:\Users\Alberto\Source\Repos\amariscalc\C-sharp\SintaxisBasica\bin\Debug\net7.0\SintaxisBasica.runtimeconfig.json
+C:\Users\Alberto\Source\Repos\amariscalc\C-sharp\SintaxisBasica\bin\Debug\net7.0\SintaxisBasica.dll
+C:\Users\Alberto\Source\Repos\amariscalc\C-sharp\SintaxisBasica\bin\Debug\net7.0\SintaxisBasica.pdb
+C:\Users\Alberto\Source\Repos\amariscalc\C-sharp\SintaxisBasica\obj\Debug\net7.0\SintaxisBasica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alberto\Source\Repos\amariscalc\C-sharp\SintaxisBasica\obj\Debug\net7.0\SintaxisBasica.AssemblyInfoInputs.cache
+C:\Users\Alberto\Source\Repos\amariscalc\C-sharp\SintaxisBasica\obj\Debug\net7.0\SintaxisBasica.AssemblyInfo.cs
+C:\Users\Alberto\Source\Repos\amariscalc\C-sharp\SintaxisBasica\obj\Debug\net7.0\SintaxisBasica.csproj.CoreCompileInputs.cache
+C:\Users\Alberto\Source\Repos\amariscalc\C-sharp\SintaxisBasica\obj\Debug\net7.0\SintaxisBasica.dll
+C:\Users\Alberto\Source\Repos\amariscalc\C-sharp\SintaxisBasica\obj\Debug\net7.0\refint\SintaxisBasica.dll
+C:\Users\Alberto\Source\Repos\amariscalc\C-sharp\SintaxisBasica\obj\Debug\net7.0\SintaxisBasica.pdb
+C:\Users\Alberto\Source\Repos\amariscalc\C-sharp\SintaxisBasica\obj\Debug\net7.0\SintaxisBasica.genruntimeconfig.cache
+C:\Users\Alberto\Source\Repos\amariscalc\C-sharp\SintaxisBasica\obj\Debug\net7.0\ref\SintaxisBasica.dll

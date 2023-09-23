@@ -171,7 +171,7 @@ namespace CSharpHelloWorld
             // Class
             var myPet = new Pet ("Perro Paco",15);
             Console.WriteLine($"The dog´s name is {myPet.name} and he is {myPet.age} years old.");
-
+            Console.ReadKey();
         // Functions
         void myFunctions ()
         {
