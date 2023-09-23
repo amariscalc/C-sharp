@@ -12,8 +12,12 @@ namespace SintaxisBasica2
             Console.WriteLine ("Hello, guys!");
             Console.WriteLine ("Please enter the necessary information.");
             Console.Write ("Name and surname: ");
-            string nameSurname = Console.ReadLine ();
-            Console.WriteLine (nameSurname);
+            string NameSurname = Console.ReadLine ();
+            Console.WriteLine (NameSurname);
+            Console.Write("Birth year: ");
+            string Year = Console.ReadLine();
+            Console.WriteLine ($"Your name is {NameSurname} and your birth year is {Year}.");
+
 
         }
     }
