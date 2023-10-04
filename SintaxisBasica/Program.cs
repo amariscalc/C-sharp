@@ -67,6 +67,30 @@ namespace CSharpHelloWorld
 
             // myName = "Pepe"; Error, "myName is a constant so you can´t change the value.
 
+            
+            //Dynamic variable
+            dynamic myDinamycVar;
+            myDinamycVar = "I´m a string";
+            Console.WriteLine($"Type data of \"myDinamyVar\" is {myDinamycVar.GetType()}"); // Type data of "myDinamyVar" is System.String
+            myDinamycVar = 100;
+            Console.WriteLine($"Type data of \"myDinamyVar\" is {myDinamycVar.GetType()}"); // Type data of "myDinamyVar" is System.Int32
+
+            // Convert type data
+
+            string myAge = "35";
+            int myAgeInt = Convert.ToInt32 (myAge);
+            Console.WriteLine (myAgeInt);
+            Console.WriteLine($"Type data of \"myAgeInt\" is {myAgeInt.GetType()}"); // Type data of "myAgeInt" is System.Int32
+
+            Console.Write("Enter the age:");
+            double myAgeDouble = Convert.ToDouble (Console.ReadLine());
+            Console.WriteLine ($"The age enter is: {myAgeDouble}");
+            Console.WriteLine($"Type data of \"myAgeDouble\" is {myAgeDouble.GetType()}"); // Type data of "myAgeDouble" is System.Double
+
+            Console.WriteLine ("Enter your phone number:");
+            double myPhone = double.Parse (Console.ReadLine());
+            Console.WriteLine($"Type data of \"myPhone\" is {myPhone.GetType()}"); // Type data of "myPhone" is System.Double
+
             // Structures
             // Array
             var MyArray = new string [] {"Alberto", "Mariscal", "Sevilla"};
@@ -81,7 +105,7 @@ namespace CSharpHelloWorld
             }
 
             // The .Append() method on the array appends a value to the end of the sequence.
-            MyArray = MyArray.Append("Real Betis Balompíe").ToArray();
+            MyArray = MyArray.Append("\nReal Betis Balompíe").ToArray();
             Console.WriteLine(MyArray[3]); // Real Betis Balompíe
 
             // Dictionary
@@ -163,6 +187,58 @@ namespace CSharpHelloWorld
             {
                 Console.WriteLine("default print");
             }
+
+            // While
+            int numberWhile = 0;
+
+            while (numberWhile < 10)
+            {
+                Console.WriteLine($"The \"numberWhile\" values is {numberWhile}");
+                numberWhile++;
+            }
+            /*
+                The "numberWhile" values is 0
+                The "numberWhile" values is 1
+                The "numberWhile" values is 2
+                The "numberWhile" values is 3
+                The "numberWhile" values is 4
+                The "numberWhile" values is 5
+                The "numberWhile" values is 6
+                The "numberWhile" values is 7
+                The "numberWhile" values is 8
+                The "numberWhile" values is 9 
+            */
+
+            // Do While
+            int numberDoWhile = 15;
+
+            do
+            {
+
+                Console.WriteLine($"The \"numberDoWhile\" values is {numberDoWhile}");
+                numberDoWhile++;
+
+            } while (numberDoWhile < 10);
+            // The "numberDoWhile" values is 15
+
+            // Switch
+            int day = 0;
+            bool numValidate = false;
+            do
+            {
+                try
+                {
+                    Console.Write("Please, enter the day number (1-7)");
+                    day = Int32.Parse(Console.ReadLine());
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Incorrect input");
+                    numValidate = false;
+
+                }
+            } while (day < 1 || day > 7 || numValidate == false);
+
 
             // Run functions
             myFunctions();

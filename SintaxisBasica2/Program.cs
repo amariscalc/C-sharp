@@ -9,15 +9,20 @@ namespace SintaxisBasica2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine ("Hello, guys!");
+            Console.Write ("Hello, guys!#\n");
             Console.WriteLine ("Please enter the necessary information.");
+            //Console.ReadLine();
+
             Console.Write ("Name and surname: ");
             string NameSurname = Console.ReadLine ();
-            Console.WriteLine (NameSurname);
+            // Console.WriteLine (NameSurname);
             Console.Write("Birth year: ");
             string Year = Console.ReadLine();
             Console.WriteLine ($"Your name is {NameSurname} and your birth year is {Year}.");
+            
+            Console.WriteLine("Please enter the necessary information.");
 
+            
 
         }
     }
