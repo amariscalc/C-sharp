@@ -230,6 +230,7 @@ namespace CSharpHelloWorld
                 {
                     Console.Write("Please, enter the day number (1-7)");
                     day = Int32.Parse(Console.ReadLine());
+                    numValidate = true;
                 }
                 catch (FormatException)
                 {
@@ -239,6 +240,30 @@ namespace CSharpHelloWorld
                 }
             } while (day < 1 || day > 7 || numValidate == false);
 
+            switch (day)
+            {
+                case 1:
+                    Console.WriteLine($"Day {day} of the week. Today is monday");
+                    break;
+                case 2:
+                    Console.WriteLine($"Day {day} of the week. Today is tuesday");
+                    break;
+                case 3:
+                    Console.WriteLine($"Day {day} of the week. Today is webnesday");
+                    break;
+                case 4:
+                    Console.WriteLine($"Day {day} of the week. Today is thursday");
+                    break;
+                case 5:
+                    Console.WriteLine($"Day {day} of the week. Today is friday");
+                    break;
+                case 6:
+                    Console.WriteLine($"Day {day} of the week. Today is saturday");
+                    break;
+                case 7:
+                    Console.WriteLine($"Day {day} of the week. Today is sunday");
+                    break;
+            }
 
             // Run functions
             myFunctions();
