@@ -5,8 +5,11 @@ Se solicita por consola 3 números enteros. Se guardan sobre las variables A, B 
 Se muestran por pantalla de forma ordenada de mayor a menor.
 
 */
+
+// Declarar e inicializar las variables
 double A = 0, B = 0, C = 0;
 
+// Solicitar y leer por teclado los 3 números
 Console.Write("Enter the first number: ");
 A = Convert.ToDouble(Console.ReadLine());
 
