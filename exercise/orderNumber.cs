@@ -2,8 +2,8 @@
 Crea un diagrama de flujo que cumpla con las siguientes especificaciones:
 
 Se solicita por consola 3 números enteros. Se guardan sobre las variables A, B y C.
-Se determina cuál de los 3 números es el mayor
-Se muestra en salida el mayor de los 3 valores (no es necesario determinar qué variable tiene el mayor de los valores)
+Se muestran por pantalla de forma ordenada de mayor a menor.
+
 */
 double A = 0, B = 0, C = 0;
 
