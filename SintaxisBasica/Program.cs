@@ -236,7 +236,6 @@ namespace CSharpHelloWorld
                 {
                     Console.WriteLine("Incorrect input");
                     numValidate = false;
-
                 }
             } while (day < 1 || day > 7 || numValidate == false);
 
